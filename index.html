@@ -16,8 +16,6 @@
       margin: 0;
       font-family: 'Poppins', sans-serif;
       color: #fff;
-
-      /* ✅ Full Page Background */
       background: 
         linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
         url('background_image.jpeg') no-repeat center center fixed;
@@ -29,7 +27,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: rgba(27,31,36,0.85); /* semi-transparent */
+      background: rgba(27,31,36,0.85);
       padding: 15px 60px;
     }
     nav .logo {
@@ -93,29 +91,30 @@
       display: grid;
       grid-template-columns: 1.2fr 0.8fr;
       padding: 60px;
-      min-height: 100vh; /* full viewport height */
+      min-height: 100vh;
       align-items: center;
     }
 
     /* Left Content */
     .hero-left h3 {
-      font-size: 16px;
-      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 56px;   /* same as WEB-A-THON */
+      font-weight: 700;
       margin: 0;
-      color: #eee;
+      color: #FFD700;    /* same yellow */
     }
     .hero-left h1 {
       font-family: 'Montserrat', sans-serif;
       font-size: 56px;
       font-weight: 700;
       color: #FFD700;
-      margin: 10px 0 5px;
+      margin: 0;
     }
     .underline {
       height: 3px;
       width: 120px;
       background: #FFD700;
-      margin-bottom: 20px;
+      margin: 15px 0 20px;
     }
     .hero-left p {
       font-size: 18px;
@@ -189,11 +188,11 @@
 
     /* Right Card */
     .card {
-      background: rgba(26,31,37,0.9); /* semi-transparent */
+      background: rgba(26,31,37,0.9);
       border-radius: 18px;
       padding: 30px;
       width: 420px;
-      height: 280px;
+      /* height: 280px;  <-- ❌ removed fixed height */
       border: 1px solid #303841;
     }
     .card h2 {
@@ -237,7 +236,6 @@
   <!-- Navbar -->
   <nav>
     <div class="logo">
-      <!-- ✅ Amogha circular logo -->
       <img src="4.jpeg" alt="Amogha Logo">
       <div class="logo-text">
         <span>AMOGHA 2K25</span>
@@ -252,7 +250,6 @@
       <li><a href="#">Prizes</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
-    <!-- ✅ Moon icon -->
     <div class="moon"><img src="moon.png" alt="Moon Icon"></div>
   </nav>
 
@@ -286,7 +283,6 @@
       <div class="meta"><i class="fa-solid fa-location-dot"></i> RGMCET</div>
       <div class="meta"><i class="fa-solid fa-calendar"></i> 19 | 20 September 2025</div>
       <div class="logos">
-        <!-- ✅ Symposium logos -->
         <img src="3.jpeg" alt="RGM Logo">
         <img src="1.jpeg" alt="IIC Logo">
         <img src="2.jpeg" alt="IEEE Logo">
